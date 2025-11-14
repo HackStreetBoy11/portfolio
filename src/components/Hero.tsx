@@ -31,16 +31,37 @@ export default function Hero() {
                 I love crafting intelligent, scalable, and beautiful digital experiences.
             </motion.p>
 
-            {/* CTA Button */}
-            <motion.a
-                href="#projects"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="mt-8 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium 
-                   hover:bg-blue-700 transition shadow-lg"
+            {/* CTA Buttons */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.8 }}
+                className="mt-8 flex flex-col sm:flex-row gap-4"
             >
-                View My Work 🚀
-            </motion.a>
+                <motion.a
+                    href="#projects"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium 
+                   hover:bg-blue-700 transition shadow-lg text-center"
+                >
+                    View My Work 🚀
+                </motion.a>
+
+                <motion.a
+                    href="/resume.pdf"
+                    download
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg font-medium 
+                   dark:text-blue-400 dark:border-blue-400
+                   hover:bg-blue-600 hover:text-white transition shadow text-center"
+                >
+                    Download Resume 📄
+                </motion.a>
+            </motion.div>
+
+
 
             {/* Social Icons */}
             <motion.div
