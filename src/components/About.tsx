@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import { SiMongodb, SiJavascript, SiCplusplus } from "react-icons/si";
-
+import { SiNumpy, SiPandas, SiScikitlearn, SiPlotly, SiPython } from "react-icons/si";
 export default function About() {
     const education = [
         { level: "10th Grade", institution: "Parwati Prema Jagati Saraswati Vihar", board: "CBSE", score: "90%", year: "2020" },
@@ -19,6 +19,11 @@ export default function About() {
         { name: "MongoDB", icon: <SiMongodb className="text-green-600 text-5xl" /> },
         { name: "Python", icon: <FaPython className="text-blue-400 text-5xl" /> },
         { name: "C++", icon: <SiCplusplus className="text-blue-600 text-5xl" /> },
+        { name: "NumPy", icon: <SiNumpy className="text-blue-500 text-5xl" /> },
+        { name: "Pandas", icon: <SiPandas className="text-purple-500 text-5xl" /> },
+        { name: "Scikit-learn", icon: <SiScikitlearn className="text-orange-400 text-5xl" /> },
+        { name: "Matplotlib", icon: <SiPlotly className="text-red-500 text-5xl" /> },
+        { name: "Seaborn", icon: <SiPython className="text-teal-400 text-5xl" /> },
     ];
 
     return (
