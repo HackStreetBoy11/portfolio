@@ -40,14 +40,15 @@ technologies: ["Python", "KNN", "Scikit-learn", "Pandas", "NumPy", "Streamlit"]
         github: "https://github.com/HackStreetBoy11/NextHire",
         image: "/images/nextHire.png",
         technologies: ["Next.js", "TypeScript", "Convex", "Clerk", "Stream.io"],
-    },
-    {
-        title: "MovieFinder",
-        description:
-            "Find the movies that are making waves worldwide. Search, explore, and stay updated with what’s trending everywhere.",
-        link: "https://movie-finder-eight-ecru.vercel.app/",
-        github: "https://github.com/HackStreetBoy11/movie_finder",
-        image: "/images/movies.png",
-        technologies: ["Vite", "React", "JavaScript", "Tailwind CSS", "Appwrite", "TMDB API"]
-    }  
+    }
+    // ,
+    // {
+    //     title: "MovieFinder",
+    //     description:
+    //         "Find the movies that are making waves worldwide. Search, explore, and stay updated with what’s trending everywhere.",
+    //     link: "https://movie-finder-eight-ecru.vercel.app/",
+    //     github: "https://github.com/HackStreetBoy11/movie_finder",
+    //     image: "/images/movies.png",
+    //     technologies: ["Vite", "React", "JavaScript", "Tailwind CSS", "Appwrite", "TMDB API"]
+    // }  
 ];
