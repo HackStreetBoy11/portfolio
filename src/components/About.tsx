@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import { SiMongodb, SiJavascript, SiCplusplus, SiNumpy, SiPandas, SiScikitlearn, SiPlotly, SiPython } from "react-icons/si";
+import type { Variants } from "framer-motion";
 
 export default function About() {
     const education = [
@@ -83,16 +84,16 @@ export default function About() {
         },
     };
 
-    const containerVariants = {
+    const containerVariants: Variants = {
         hidden: { opacity: 0 },
         visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
     };
 
-    const itemVariants = {
+
+    const itemVariants: Variants = {
         hidden: { opacity: 0, y: 24 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
     };
-
     return (
         <section
             id="about"
@@ -103,7 +104,7 @@ export default function About() {
                 <div className="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full bg-cyan-500/5 blur-[120px]" />
                 <div className="absolute bottom-0 right-0 w-[360px] h-[360px] rounded-full bg-violet-500/5 blur-[100px]" />
                 {/* subtle grid */}
-                
+
             </div>
 
             <div className="relative max-w-6xl mx-auto">
