@@ -1,21 +1,28 @@
-/* Import Modern Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-/* ---------- Root Theme Colors ---------- */
+/* ---------- Root Theme ---------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #080c14;
+  --foreground: #e8eaf0;
+  --accent-cyan: #22d3ee;
+  --accent-violet: #a78bfa;
+  --accent-emerald: #34d399;
+  --muted: #6b7280;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.06);
 }
 
-@media (prefers-color-scheme: dark) {
+/* ---------- Light Mode Override ---------- */
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #f4f5f7;
+    --foreground: #0f1117;
+    --card-bg: rgba(0, 0, 0, 0.03);
+    --card-border: rgba(0, 0, 0, 0.07);
   }
 }
 
@@ -26,23 +33,28 @@ body {
   overflow-x: hidden;
 }
 
-/* ---------- Global Body Styling ---------- */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Poppins', 'Inter', sans-serif;
-  line-height: 1.6;
-  letter-spacing: 0.3px;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.65;
+  letter-spacing: 0.15px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* ---------- Smooth Transitions on All Elements ---------- */
-* {
+/* ---------- Box Sizing ---------- */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+/* ---------- Smooth Color Transitions ---------- */
+*:not([class*="animate"]) {
   transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -50,25 +62,72 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #3b82f6;
-  /* Tailwind blue-500 */
+  color: var(--accent-cyan);
 }
 
-/* ---------- Headings for Distinction ---------- */
+/* ---------- Headings ---------- */
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Inter', 'Poppins', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
-/* ---------- Dark Mode Scheme ---------- */
+/* ---------- Scrollbar (Dark) ---------- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* ---------- Selection ---------- */
+::selection {
+  background: rgba(34, 211, 238, 0.2);
+  color: #fff;
+}
+
+/* ---------- Custom Utility: Glass Card ---------- */
+@layer components {
+  .glass-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 1rem;
+    backdrop-filter: blur(8px);
+    transition: border-color 0.3s ease, background 0.3s ease;
+  }
+
+  .glass-card:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .accent-glow-cyan {
+    text-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+  }
+
+  .accent-glow-violet {
+    text-shadow: 0 0 20px rgba(167, 139, 250, 0.4);
+  }
+}
+
+/* ---------- Dark mode scheme ---------- */
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
