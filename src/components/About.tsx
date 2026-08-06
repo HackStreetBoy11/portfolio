@@ -24,7 +24,7 @@ export default function About() {
             level: "B.Tech — Computer Science",
             institution: "Graphic Era Hill University",
             board: "Haldwani, Nainital",
-            score: "8.1 CGPA",
+            score: "8.24 CGPA",
             year: "2022 – Present",
         },
     ];
@@ -237,7 +237,7 @@ export default function About() {
                             {[
                                 { label: "Projects Built", value: "10+" },
                                 { label: "Technologies", value: "13+" },
-                                { label: "Current CGPA", value: "8.1" },
+                                { label: "Current CGPA", value: "8.24" },
                             ].map((stat, i) => (
                                 <div
                                     key={i}

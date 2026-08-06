@@ -1,28 +1,47 @@
 export const projects = [
     {
-    title: "AQIPrediction",
-    description: "AQI Prediction Live Demo ↗. Built a Decision Tree Regression model to forecast air quality index (AQI) using historical data. Deployed via Flask for interactive, real-time predictions and analysis.",
-    link: "https://aqiprediction-q6vq.onrender.com/",
-    github: "https://github.com/HackStreetBoy11/AqiPrediction",
-    image: "/images/aqi.jpg",
-    technologies: ["Python", "Flask", "Decision Tree Regression", "Scikit-learn", "NumPy", "SciPy"]
-},
-{
-title: "MovieRecommendationSystem",
-description: "Movie Recommendation System Live Demo ↗. Built a content-based recommender using NLP, TF-IDF, and cosine similarity, achieving 92% accuracy on 5,000+ movies. Deployed via FastAPI for fast, scalable recommendations.",
-link: "https://movierecommendation-juspzbc78f7k2eypqxj8gr.streamlit.app/",
-github: "https://github.com/HackStreetBoy11/MovieRecommendation",
-image: "/images/moviesR.jpg",
-technologies: ["Python", "FastAPI", "NLP", "TF-IDF", "Cosine Similarity", "Scikit-learn", "Pandas", "NumPy"]
-},
-{
-title: "Heart Stroke Prediction",
-description: " Built a predictive model using K-Nearest Neighbors (KNN) on a heart health dataset to estimate stroke risk. Deployed via Streamlit for interactive, real-time predictions.",
-link: "https://heartratepridiction2002.streamlit.app/",
-github: "https://github.com/HackStreetBoy11/HeartAttactRisk",
-image: "/images/Heart.jpg",
-technologies: ["Python", "KNN", "Scikit-learn", "Pandas", "NumPy", "Streamlit"]
-},
+        title: "PrepAI - AI Mock Interview Platform",
+        description:
+            "Developed an AI-powered mock interview platform using Next.js, Clerk, and Groq that generates personalized interview questions and provides real-time feedback with performance ratings and improvement suggestions",
+        link: "https://ai-mock-interview-71yqb9ukr-hack-street-boys.vercel.app/dashboard",
+        github: "https://github.com/HackStreetBoy11/ai-mock-interview",
+        image: "/images/prepAi.png", // store this image inside /public/images/
+        technologies: ["Next.js", "Tailwind CSS", "Clerk", "Groq", "TypeScript", "JavaScript"],
+    },
+    {
+        title: "DocuMind - RAG-powered PDF Chatbot",
+        description:
+            "Built a RAG-powered PDF chatbot using LangChain, Mistral AI, HuggingFace Embeddings, and ChromaDB to enable accurate, context-aware document question answering through semantic retrieval.",
+        link: "https://ragchatbot-ztpmagxgynuskca5nht3kb.streamlit.app/",
+        github: "https://github.com/HackStreetBoy11/RagChatBot",
+        image: "/images/DocuMind.png",
+        technologies: ["Python", "TypeScript", "LangChain", "Mistral AI", "HuggingFace", "ChromaDB"],
+    },
+
+    {
+        title: "AQIPrediction",
+        description: "AQI Prediction Live Demo ↗. Built a Decision Tree Regression model to forecast air quality index (AQI) using historical data. Deployed via Flask for interactive, real-time predictions and analysis.",
+        link: "https://aqiprediction-q6vq.onrender.com/",
+        github: "https://github.com/HackStreetBoy11/AqiPrediction",
+        image: "/images/aqi.jpg",
+        technologies: ["Python", "Flask", "Decision Tree Regression", "Scikit-learn", "NumPy", "SciPy"]
+    },
+    {
+        title: "MovieRecommendationSystem",
+        description: "Movie Recommendation System Live Demo ↗. Built a content-based recommender using NLP, TF-IDF, and cosine similarity, achieving 92% accuracy on 5,000+ movies. Deployed via FastAPI for fast, scalable recommendations.",
+        link: "https://movierecommendation-juspzbc78f7k2eypqxj8gr.streamlit.app/",
+        github: "https://github.com/HackStreetBoy11/MovieRecommendation",
+        image: "/images/moviesR.jpg",
+        technologies: ["Python", "FastAPI", "NLP", "TF-IDF", "Cosine Similarity", "Scikit-learn", "Pandas", "NumPy"]
+    },
+    {
+        title: "Heart Stroke Prediction",
+        description: " Built a predictive model using K-Nearest Neighbors (KNN) on a heart health dataset to estimate stroke risk. Deployed via Streamlit for interactive, real-time predictions.",
+        link: "https://heartratepridiction2002.streamlit.app/",
+        github: "https://github.com/HackStreetBoy11/HeartAttactRisk",
+        image: "/images/Heart.jpg",
+        technologies: ["Python", "KNN", "Scikit-learn", "Pandas", "NumPy", "Streamlit"]
+    },
     {
         title: "Nutrify - Food Tracking App",
         description:
